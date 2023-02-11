@@ -6,7 +6,7 @@ require('dotenv').config()
 const app = express()
 
 app.get('/', (request, response) => {
-  res.send('Hello, Lads !')
+ response.send('Hello, Lads !')
 })
 
 // app.get('/home', (request, reresponses) => {
