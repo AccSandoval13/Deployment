@@ -5,11 +5,15 @@ const PORT = process.env.PORT
 
 const app = express()
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!')
+app.get('/', (request, reresponses) => {
+  response.send('Hello, Lads !')
 })
 
-app.listen(3000, () => {
+app.get('/home', (request, reresponses) => {
+  response.send('Welcome To The Home Page Lads !')
+})
+
+app.listen(PORT, () => {
 console.log(`app listening on port ${PORT}`)
   
 })
